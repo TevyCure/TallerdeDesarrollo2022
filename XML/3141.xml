@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+	<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+         <Documento ID="F3141T33">
+            <Encabezado>
+               <IdDoc>
+                  <TipoDTE>33</TipoDTE>
+                  <Folio>3141</Folio>
+                  <FchEmis>2022-05-21</FchEmis>
+                  <FmaPago>1</FmaPago>
+                  <FchVenc>2022-05-21</FchVenc>
+               </IdDoc>
+               <Emisor>
+                  <RUTEmisor>77461851-1</RUTEmisor>
+                  <RznSoc>FERRETERIA KATYTA</RznSoc>
+                  <GiroEmis>VENTAS AL POR MENOR DE COMBUSTIBLE PARA AUTOMOTORES</GiroEmis>
+                  <Acteco>505000</Acteco>
+                  <DirOrigen>11 ORIENTE 15 05 / 1567</DirOrigen>
+                  <CmnaOrigen>TALCA</CmnaOrigen>
+                  <CiudadOrigen>TALCA</CiudadOrigen>
+               </Emisor>
+               <RUTMandante>92011000-2</RUTMandante>
+               <Receptor>
+                  <RUTRecep>7726902-9</RUTRecep>
+                  <RznSocRecep>VALENTIN SEGUNDO MARQUEZ RIVERA</RznSocRecep>
+                  <GiroRecep>FERRETERIA</GiroRecep>
+                  <DirRecep>MANUEL RODRIGUEZ #108</DirRecep>
+                  <CmnaRecep>CUREPTO</CmnaRecep>
+                  <CiudadRecep>TALCA</CiudadRecep>
+               </Receptor>
+               <Totales>
+                  <MntNeto>66173</MntNeto>
+                  <MntExe>0</MntExe>
+                  <TasaIVA>19</TasaIVA>
+                  <IVA>12573</IVA>
+                  <IVATerc>12573</IVATerc>
+                  <ImptoReten>
+                     <TipoImp>35</TipoImp>
+                     <MontoImp>1</MontoImp>
+                  </ImptoReten>
+                  <MntTotal>72003</MntTotal>
+               </Totales>
+            </Encabezado>
+            <Detalle>
+               <NroLinDet>1</NroLinDet>
+               <NmbItem>V-POWER Gasolina 97 octanos sp     </NmbItem>
+               <DscItem>IE Base: 340.5720 - IE Variable: -451.7290 - Impuestos Especifico Negativo -6743 CLP</DscItem>
+               <QtyItem>60.66</QtyItem>
+               <UnmdItem>Litr</UnmdItem>
+               <PrcItem>1090.8836</PrcItem>
+               <CodImpAdic>35</CodImpAdic>
+               <MontoItem>66173</MontoItem>
+            </Detalle>
+            <TED version="1.0">
+               <DD>
+                  <RE>77461851-1</RE>
+                  <TD>33</TD>
+                  <F>3141</F>
+                  <FE>2022-05-21</FE>
+                  <RR>7726902-9</RR>
+                  <RSR>VALENTIN SEGUNDO MARQUEZ RIVERA</RSR>
+                  <MNT>72003</MNT>
+                  <IT1>V-POWER Gasolina 97 octanos sp     </IT1>
+                  <CAF version="1.0">
+                     <DA>
+                        <RE>77461851-1</RE>
+                        <RS>COMERCIAL LAS SIERRAS SPA</RS>
+                        <TD>33</TD>
+                        <RNG>
+                           <D>3028</D>
+                           <H>4527</H>
+                        </RNG>
+                        <FA>2022-04-17</FA>
+                        <RSAPK>
+                           <M>1j3MUqQu/RRMqIDt8/ShM99ks+TEBpS96UM+mxTGOYscz7dl9czn3PCCPh7l9dMf8KSmraIRrgNsyGE/194e0w==</M>
+                           <E>Aw==</E>
+                        </RSAPK>
+                        <IDK>300</IDK>
+                     </DA>
+                     <FRMA algoritmo="SHA1withRSA">M8wwAYlF5mlzGc2UL9bDSHhSQhowxy2W7+qPv4C12y8bUAcY1+5sMUaANZt20ZyA0CHFBvpFca3MNCNmz5WFkg==</FRMA>
+                  </CAF>
+                  <TSTED>2022-05-21T15:29:08</TSTED>
+               </DD>
+               <FRMT algoritmo="SHA1withRSA">h4aogf8YZQP9iKc18A2wBrlRzk7zKti8hdsM+IgIr85iVaZKcP6s13AiqAkSXVs6p5v70rpksRLHurEQQ/Aqtg==</FRMT>
+            </TED>
+            <TmstFirma>2022-05-21T14:38:54</TmstFirma>
+         </Documento><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F3141T33"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>516s6JdlebXwjjhbzBKsun9yE1Q=</DigestValue></Reference></SignedInfo><SignatureValue>
+FLficcVom0wkL62O0PIwM6a/AYuKvTAGFbie/6ZBD4eZhfKr77oqi5/Nb4WnKNuU
+Gp+KFqDS3xazaMFIUYsTIeW8bBrh159cIY3Sy9OnX4QxSxLsLzqp8fL1W5PtA0WG
+ptsYHw5+9xy8YKarngdu7v1F93/18mpaqAQ0NoNK94b3Z3f0vmoNsbSxBGMdU+xI
+4OhdUH959V3Ev2uc4fWpXtCBzWBCSJDr3xi0b32MBhhBDxg0/u9D7hFiN1nUmGdW
+ohltEFfeoQxtcfTGVm+g9ZaN7qTGsWL9Q1MnJAE3UBr+ftqd8ut7Z5sp0jjiskcX
+rL54rA6Pq6bYN2nnUe/knA==
+</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>
+gt/tCi2q0QBqapmqqo9OlSJ2y5nq+sg90gvl8G8yicddQsG2W9P1J9TTVDLdS0R1
+oPOfvirrCjNKAMWdFNci3mchIoUSiesj4TLkROUYnh91/f4Dlj9y2XJ5ee/JOMXo
+QAWUHKzUMCVqQ6zWJCC4PW5vqHu/WoFSuE+0EK/oMq1tAgnm3BRLyTQCN8Ysgxi0
+KDCy8mN8DJ4gv/Zqk8nPd/d7KrWqMebYqnTzgpyjTC+Br3QU12hp6aAjPFtZDsuy
++JVEBe/G5ToRYX5ZqIusFxUJk7TRjXhLgNnFg5fhAHR3J6bJr64fzCimAWzKYECd
+R824kBcKHW6McGmcmNP27w==
+</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIGRTCCBS2gAwIBAgIIZhoiqxYNx4AwDQYJKoZIhvcNAQELBQAwga8xCzAJBgNV
+BAYTAkNMMRQwEgYDVQQKDAtFLVNpZ24gUy5BLjE5MDcGA1UECwwwVGVybXMgb2Yg
+dXNlIGF0IHd3dy5lc2lnbi1sYS5jb20vYWN1ZXJkb3RlcmNlcm9zMSswKQYDVQQD
+DCJFLVNpZ24gQ2xhc3MgMiBGaXJtYSBUcmlidXRhcmlhIENBMSIwIAYJKoZIhvcN
+AQkBFhNlLXNpZ25AZXNpZ24tbGEuY29tMB4XDTIwMDMyMzEyMzM0NFoXDTIzMDMy
+MzEyMjcwMFowgaQxCzAJBgNVBAYTAkNMMRQwEgYDVQQKDAtFLVNpZ24gUy5BLjE5
+MDcGA1UECwwwVGVybXMgb2YgdXNlIGF0IHd3dy5lc2lnbi1sYS5jb20vYWN1ZXJk
+b3RlcmNlcm9zMRswGQYDVQQDDBJKYW5ldHQgTGFyYSBDZWlqYXMxJzAlBgkqhkiG
+9w0BCQEWGGphbmV0dC5sYXJhQGdvc29ja2V0Lm5ldDCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBAILf7QotqtEAamqZqqqPTpUidsuZ6vrIPdIL5fBvMonH
+XULBtlvT9SfU01Qy3UtEdaDzn74q6wozSgDFnRTXIt5nISKFEonrI+Ey5ETlGJ4f
+df3+A5Y/ctlyeXnvyTjF6EAFlBys1DAlakOs1iQguD1ub6h7v1qBUrhPtBCv6DKt
+bQIJ5twUS8k0AjfGLIMYtCgwsvJjfAyeIL/2apPJz3f3eyq1qjHm2Kp084Kco0wv
+ga90FNdoaemgIzxbWQ7LsviVRAXvxuU6EWF+WaiLrBcVCZO00Y14S4DZxYOX4QB0
+dyemya+uH8wopgFsymBAnUfNuJAXCh1ujHBpnJjT9u8CAwEAAaOCAmwwggJoMIGA
+BggrBgEFBQcBAQR0MHIwSgYIKwYBBQUHMAKGPmh0dHA6Ly9wa2kuZXNpZ24tbGEu
+Y29tL2NhY2VydHMvcGtpQ2xhc3MyRmlybWFUcmlidXRhcmlhQ0EuY3J0MCQGCCsG
+AQUFBzABhhhodHRwOi8vb2NzcC5lc2lnbi1sYS5jb20wHQYDVR0OBBYEFElCrgm9
+dk5XboMcxz1rAvo0wnqdMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAU+Ur6wsdu
+wucSnFdFNYQabSjpSqQwgcgGA1UdIASBwDCBvTCBugYMKwYBBAGCymoBBAECMIGp
+MH4GCCsGAQUFBwICMHIecABDAGUAcgB0AGkAZgBpAGMAYQBkAG8AIABwAGEAcgBh
+ACAAdQBzAG8AIABUAHIAaQBiAHUAdABhAHIAaQBvACwAIABDAG8AbQBlAHIAYwBp
+AG8ALAAgAFAAYQBnAG8AcwAgAHkAIABPAHQAcgBvAHMwJwYIKwYBBQUHAgEWG2h0
+dHA6Ly93d3cuZXNpZ24tbGEuY29tL2NwczBRBgNVHR8ESjBIMEagRKBChkBodHRw
+Oi8vcGtpLmVzaWduLWxhLmNvbS9jcmwvcGtpQ2xhc3MyRmlybWFUcmlidXRhcmlh
+L2VuZHVzZXIuY3JsMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcD
+AgYIKwYBBQUHAwQwIwYDVR0RBBwwGqAYBggrBgEEAcEBAaAMFgoyMzM5NDQyMS0x
+MCMGA1UdEgQcMBqgGAYIKwYBBAHBAQKgDBYKOTk1NTE3NDAtSzANBgkqhkiG9w0B
+AQsFAAOCAQEAF9TXjeu12qvrLOK8/U9zLaLd2mQYSWy9Mx1lxjn95WUiXSYNCw83
+y2mlQgqkpCzBIDuXeT69OGhT1UyH0ORIGI8x54A/mI78a8Tbs+4Rj1vkayGB2pMk
+BdV43WMQSxO99bwROzxV2Rf/QA2sxmir9UdnPGwGyJDACU2bD6KAau4ktVI4jZn1
+UqnIVpaNvZWYBdsqPuD7z5kbJtFqHofBlmIjMGLxBPO55uWiSns0zm0SLiRCKas2
+DEQUdTAQ7NgU8sgP4VL69hglgOr4klCvbB6U2n//KeNRVV7J36QvLk31F/R9D1lB
+P5tKQp0kEEWxoXlN4pkhN55mNlc1MM6RpQ==
+</X509Certificate></X509Data></KeyInfo></Signature>
+      </DTE>
