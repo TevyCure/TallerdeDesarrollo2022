@@ -413,7 +413,7 @@ def ventanaInventario():
 
         # se crea la especie de modal para agregar elementos,Toplevel()
         ventana_nueva = Toplevel()
-        ventana_nueva.title("Agregar Producto")
+        ventana_nueva.title("Modificar Producto")
         ventana_nueva.geometry("720x640")
         ventana_nueva.configure(bg="#2148C0")
         canvas = Canvas(ventana_nueva, width=0, height=0, bg="#2148C0")
