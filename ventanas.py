@@ -277,11 +277,6 @@ def ventanaInventario():
             precio = precioEntry.get()
             categoria = categoriaEntry.get()
 
-            if codigo or descripcion or precio == '':
-                messagebox.showinfo(
-                    message="Tienes algún campo vacio", title="Error")
-                return
-
             elementos.append(codigo)
             elementos.append(descripcion)
             elementos.append(precio)
@@ -368,7 +363,7 @@ def ventanaInventario():
             print(tv.item(i, 'values'))
             item = tv.item(i, 'values')
 
-            validador = inventario.eliminarElemento(codigo)
+            validador = inventario.eliminarElemento(item[0])
 
         if validador == True:
 
