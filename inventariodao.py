@@ -71,4 +71,22 @@ class Inventario:
                 message="Elemento eliminado correctamente", title="Elemento eliminado")
             return True
         except:
+            error_obj, = cx_Oracle.IntegrityError.args
+            print("Customer ID already exists")
+            print("Error Code:", error_obj.code)
+            print("Error Message:", error_obj.message)
+    
+    def modificarElemento(self,code,descript,precio):
+        try:
+            code=int(code)
+            precio=int(precio)
+            print(code)
+            print(descript)
+            print(precio)
+            Conexion.cursor.execute("update PRODUCTO set CODIGO_SKU=:1,DESCRIPCION=:2,VALOR_UNITARIO=:3 where CODIGO_SKU=:1", [code,descript,precio] )
+            Conexion.connection.commit()
+            messagebox.showinfo(
+            message="Elemento modificado correctamente", title="Elemento Modificado")
+            return True
+        except:
             pass

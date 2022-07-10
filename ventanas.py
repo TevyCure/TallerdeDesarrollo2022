@@ -367,7 +367,7 @@ def ventanaInventario():
         for i in hola:
             print(tv.item(i, 'values'))
             item = tv.item(i, 'values')
-            codigo = item[0]
+
             validador = inventario.eliminarElemento(codigo)
 
         if validador == True:
@@ -382,6 +382,103 @@ def ventanaInventario():
                 tv.insert(parent='', index='end', iid=count, text="", values=(
                     elemento[1], elemento[2], elemento[3], elemento[4]))
                 count += 1
+
+    def modalModificarItem():
+
+        def modificarItem():
+            codigo = codigoEntry.get()
+            descripcion = descripcionEntry.get()
+            precio = precioEntry.get()
+            categoria = categoriaEntry.get()
+            validador = inventario.modificarElemento(codigo,descripcion,precio)
+            print(validador)
+            if validador == True:
+                ventana_nueva.destroy()
+                products = Inventario()
+                search = products.getAllBBDD()
+                count = 0
+                for elemento in tv.get_children():
+                    tv.delete(elemento)
+                    # con este for asignamos los elementos de la lista a las columnas
+                for elemento in search:
+                    tv.insert(parent='', index='end', iid=count, text="", values=(
+                    elemento[1], elemento[2], elemento[3], elemento[4]))
+                    count += 1
+                    
+        inventario = Inventario()
+        elementModify = tv.selection()
+        listaElement = []
+        for i in elementModify:
+            print(tv.item(i, 'values'))
+            item = tv.item(i, 'values')
+            for n in item:
+                listaElement.append(n)
+        print(listaElement)
+        
+
+        # se crea la especie de modal para agregar elementos,Toplevel()
+        ventana_nueva = Toplevel()
+        ventana_nueva.title("Agregar Producto")
+        ventana_nueva.geometry("720x640")
+        ventana_nueva.configure(bg="#2148C0")
+        canvas = Canvas(ventana_nueva, width=0, height=0, bg="#2148C0")
+
+        fuente = Font(
+            family="Montserrat",
+            size=18,
+            weight="normal",
+        )
+        formAgregar = PhotoImage(file="IMG/formularioAGREGAR.png")
+        formAgregar_label = Label(
+            ventana_nueva, image=formAgregar, bg="#2148C0")
+        formAgregar_label.place(x=38, y=10)
+        # agregamos los entry para cada uno de los campos
+        codigoEntry = tk.Entry(ventana_nueva, font=fuente,
+                               borderwidth=0, foreground="blue", insertbackground="blue")
+        codigoEntry.place(x=250, y=15, width=400, height=30)
+
+        descripcionEntry = tk.Entry(ventana_nueva, font=fuente,
+                                    borderwidth=0, foreground="blue", insertbackground="blue")
+        descripcionEntry.place(x=250, y=105, width=400, height=30)
+
+        precioEntry = tk.Entry(ventana_nueva, font=fuente,
+                               borderwidth=0, foreground="blue", insertbackground="blue")
+        precioEntry.place(x=250, y=195, width=400, height=30)
+
+        categoriaEntry = tk.Entry(ventana_nueva, font=fuente,
+                                  borderwidth=0, foreground="blue", insertbackground="blue")
+        categoriaEntry.place(x=250, y=285, width=400, height=30)
+
+        botonEnviar = PhotoImage(
+            file="IMG/botonEnviar.jpg")
+
+        botonLimpiar = PhotoImage(
+            file="IMG/botonLimpiar.jpg")
+
+        botonVolver = PhotoImage(
+            file="IMG/botonVolver.jpg")
+
+        botonEnv = Button(ventana_nueva, image=botonEnviar, borderwidth=0,
+                          background='#2148c0', command=modificarItem)
+        botonEnv_label = Label(ventana_nueva, image=botonEnviar)
+        botonEnv.place(x=480, y=555)
+
+        botonLimp = Button(ventana_nueva, image=botonLimpiar, borderwidth=0,
+                           background='#2148c0')
+        botonLimp_label = Label(ventana_nueva, image=botonLimpiar)
+        botonLimp.place(x=280, y=555)
+
+        botonVolv = Button(ventana_nueva, image=botonVolver, borderwidth=0,
+                           background='#2148c0', command=ventana_nueva.destroy)
+        botonVolv_label = Label(ventana_nueva, image=botonVolver)
+        botonVolv.place(x=80, y=555)
+
+        codigoEntry.insert(0, listaElement[0])
+        descripcionEntry.insert(0, listaElement[1])
+        precioEntry.insert(0, listaElement[2])
+        categoriaEntry.insert(0, listaElement[3])
+
+        ventana_nueva.mainloop()
 
     root = Tk()
 
@@ -438,7 +535,7 @@ def ventanaInventario():
         image=button_image_2,
         borderwidth=0,
         highlightthickness=0,
-        command=avisoConstruccion,
+        command=modalModificarItem,
         relief="flat", bg='#2148c0'
     )
     button_2.place(
