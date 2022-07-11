@@ -11,4 +11,4 @@ el almacen "Los monitos de la nona"
 Está escrito en python, usando la librería Tkinter para la GUI.
 Se usa la librería "cx_Oracle" para realizar consultas a la base de datos escrita en SQL Oracle Cloud.
 Además, se debe de contar con el Wallet correspondiente a la base de datos.
-Se debe de contar con un Instante
+Se debe de contar con un Instant Client y asignar la dirección al archivo conexion.py
